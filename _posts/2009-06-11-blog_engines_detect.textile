@@ -5,7 +5,7 @@ title: blog_engines.detect {|engine| engine.not_engine?}
 
 h1. {{ page.title }}
 
-p(meta). 11 Jun 2009 - Laurel, MD
+p(meta). 11 Jun 2009 - Reston, VA
 
 I wanted to start a blog.  I didn't want to use a formal engine (too much work) or a dead simple static file system (too lame).  Then I found http://pages.github.com/.  It was simple, with functionality: <code> for post in site.posts </code>
 
