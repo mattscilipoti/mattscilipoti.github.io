@@ -22,20 +22,10 @@ h2. Issues.
 
 Update (2009-06-12 17:18)
 
-I, incorrectly, created my repo as mattscilipoti instead of mattscilipoti.github.com.  After staring at "Page does not exist!" for a few hours, I put in a support resuest.  After a short wait, I found out that:
-<ol id="comments">
-<li id="comment_199591" class="staffer">
-<p class="meta">
-</p>
-<img class="avatar" width="32" height="32" src="http://www.gravatar.com/avatar/472814aac7576b67da59ea79fcbf7d66?s=32&d=http://github.com/images/gravatars/gravatar-50.png" alt="Tekkub's Avatar"/>
-<div class="body">
-<div>
-<p>I don't think Pages setup fires on a repo rename, only the initial create. Delete your repo, recreate it, and re-push and you should get a PM that the page has built.</p>
-</div>
-</div>
-</li>
-<li id="comment_199605">
-</li>
-</ol>
+I, incorrectly, created my repo as mattscilipoti instead of mattscilipoti.github.com.  After staring at "Page does not exist!" for a few hours, I put in a support resuest.  After a short wait, <a href='http://support.github.com/discussions/repos/907-github-pages-not-found-for-mattscilipotigithubcom'>I found out that:</a>
+
+<blockquote>
+  "I don't think Pages setup fires on a repo rename, only the initial create. Delete your repo, recreate it, and re-push and you should get a PM that the page has built."
+</blockquote>
 
 Edit.  Delete.  Create.  git push.  Wait a few minutes.  tada.  What you see.
