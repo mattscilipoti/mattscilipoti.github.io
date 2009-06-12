@@ -1,0 +1,21 @@
+<a href='http://www.catb.org/hacker-emblem/'>
+<img src='http://www.catb.org/hacker-emblem/glider.png' alt='hacker emblem' /></a>
+
+---
+layout: post
+title: blog_engines.detect{|engine| engine.not_engine?}
+---
+
+h1. {{ page.title }}
+
+p(meta). 11 Jun 2009 - Laurel, MD
+
+h2. Choose.
+ * http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
+ * http://github.com/mojombo/tpw/tree/master
+ * http://github.com/blog/272-github-pages
+h2. Write.
+ * http://hobix.com/textile/
+ * http://daringfireball.net/projects/markdown/syntax#overview
+ * http://github.com/mojombo/jekyll/tree/master
+ * http://github.com/rtomayko/rdiscount/
