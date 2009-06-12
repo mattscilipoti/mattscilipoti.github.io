@@ -22,7 +22,7 @@ h2. Issues.
 
 Update (2009-06-12 17:18)
 
-I, incorrectly, created my repo as mattscilipoti instead of mattscilipoti.github.com.  After staring at "Page does not exist!" for a few hours, I put in a support resuest.  After a short wait, <a href='http://support.github.com/discussions/repos/907-github-pages-not-found-for-mattscilipotigithubcom'>I found out that:</a>
+I, incorrectly, created my repo as mattscilipoti instead of mattscilipoti.github.com.  After staring at "Page does not exist!" for a few hours, I put in a support resuest.  After a short wait, <a href='http://support.github.com/discussions/repos/907-github-pages-not-found-for-mattscilipotigithubcom'>I was informed that:</a>
 
 <blockquote>
   "I don't think Pages setup fires on a repo rename, only the initial create. Delete your repo, recreate it, and re-push and you should get a PM that the page has built."
