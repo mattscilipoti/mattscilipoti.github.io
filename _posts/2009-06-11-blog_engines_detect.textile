@@ -7,7 +7,7 @@ h1. {{ page.title }}
 
 p(meta). 11 Jun 2009 - Reston, VA
 
-I wanted to start a blog.  I didn't want to use a formal engine (too much work) or a dead simple static file system (too lame).  Then I found http://pages.github.com/.  It was simple, with functionality: <code> for post in site.posts </code>
+I wanted to start a blog.  I did not want to use a formal engine (too much work) or a dead simple static file system (too lame).  Then I found http://pages.github.com/.  It was simple, with functionality: <code> for post in site.posts </code>
 
 h2. Choose.
  * http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html
@@ -23,7 +23,7 @@ h2. Write.
 
 Update (2009-06-12 17:18)
 
-I, incorrectly, created my repo as mattscilipoti instead of mattscilipoti.github.com.  After staring at "Page does not exist!" for a few hours, I put in a support request.  After a short wait, <a href='http://support.github.com/discussions/repos/907-github-pages-not-found-for-mattscilipotigithubcom'>I was informed that:</a>
+I, incorrectly, created my repo as mattscilipoti instead of mattscilipoti.github.com.  After staring at "Page does not exist!" for a few hours, I put in a support request.  A short wait and <a href='http://support.github.com/discussions/repos/907-github-pages-not-found-for-mattscilipotigithubcom'>I had my answer:</a>
 
 <blockquote>
   "I don't think Pages setup fires on a repo rename, only the initial create. Delete your repo, recreate it, and re-push and you should get a PM that the page has built."
