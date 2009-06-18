@@ -13,6 +13,39 @@
 
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+
+  <script src="http://www.google.com/jsapi"></script>
+  <script>
+    // from henrik.github.com
+    google.load("jquery", "1");
+    google.setOnLoadCallback(function() {
+      
+       getRepos('mattscilipoti', function(repos) {
+        if (!repos.length) return;
+
+        $('#repos').replaceWith('<dl id="repos"></dl>');
+        repos.each(function() {
+          var escapedDesc = $('<div/>').text(this.description).html();
+          $('#repos').append(
+            '<dt><a href="'+this.url+'">'+this.name+'</a> ('+this.watchers+')</dt>'+
+            '<dd>'+escapedDesc+'</dd>'
+          );
+        });
+      });
+
+      function getRepos(username, callback) {
+        $.getJSON('http://github.com/api/v1/json/'+username+'?callback=?', function(data) {
+          var repos = data.user.repositories;
+          repos = $.grep(repos, function(r) { return !r.fork });
+          repos.sort(function(a, b) { return b.watchers - a.watchers });
+          repos = $(repos);
+          callback(repos);
+        });
+      }
+    });
+    
+  </script>
+  
 </head>
 <body>
 
