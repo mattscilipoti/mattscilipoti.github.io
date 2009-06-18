@@ -5,8 +5,8 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Matt Scilipoti</title>
- <link href="http://blog.clear2.me/atom.xml" rel="self"/>
- <link href="http://blog.clear2.me/"/>
+ <link href="http://blog.clearto.me/atom.xml" rel="self"/>
+ <link href="http://blog.clearto.me/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://blog.clear2.me/</id>
  <author>
@@ -17,7 +17,7 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://blog.clear2.me{{ post.url }}"/>
+   <link href="http://blog.clearto.me{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://blog.clear2.me{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
