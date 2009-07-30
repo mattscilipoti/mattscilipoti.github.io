@@ -17,6 +17,7 @@ undefined local variable or method `set_test_assigns' for #<ActionController::Te
 
 Turns out Facets #tap is stomping on another #tap.
 
+
 h2. Enter facet library loading.
 
 Instead of loading the entire Facets library, load what you need.
@@ -47,3 +48,5 @@ I see the code format isn't quite right.  It works locally (using `jekyll --pygm
 Here's a screenshot:
 !(screenshot)/images/Facets_formatted.png(Formatted code screenshot)!
 Argh.
+
+Maybe these guys can help: http://support.github.com/discussions/site/701-formatting-issues-for-github-pages-pygment-related
