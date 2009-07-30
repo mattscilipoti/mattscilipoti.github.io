@@ -24,15 +24,19 @@ Instead of loading the entire Facets library, load what you need.
 I knew this.  You knew this.  It was just convenient to ignore it.
 I'm using Facets for ergo.  That's it.  No need for the kitchen sink.
 
+<div>
 Replace:
+
 {% highlight ruby %}
 config.gem 'facets', :version => '=2.5.2'
 {% endhighlight %}
+</div>
 
+<div>
 With:
-{% highlight ruby %}
-config.gem 'facets', :version => '=2.5.2', :lib => 'facets/kernel/ergo'
-{% endhighlight %}
+
+{% highlight ruby %}config.gem 'facets', :version => '=2.5.2', :lib => 'facets/kernel/ergo'{% endhighlight %}
+</div>
 
 Done.  Error averted.  Tiny library loaded.
 
