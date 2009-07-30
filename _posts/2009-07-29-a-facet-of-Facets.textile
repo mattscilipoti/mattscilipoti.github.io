@@ -1,0 +1,41 @@
+---
+layout: post
+title: a facet of Facets
+---
+
+h1. {{ page.title }}
+
+p(meta). 29 Jul 2009 - Bethesda, MD
+
+I just updated to Rails 2.3.3 and my controllers screamed:
+<pre>
+undefined local variable or method `set_test_assigns' for #<ActionController::TestResponse:0xb5d0b488>
+/home/matt/.gem/ruby/1.8/gems/facets-2.5.2/lib/core/facets/kernel/tap.rb:9:in `instance_eval'
+/home/matt/.gem/ruby/1.8/gems/facets-2.5.2/lib/core/facets/kernel/tap.rb:9:in `tap'
+/home/matt/develop/clients/nih/mpr.ror/trunk/spec/controllers/about_controller_spec.rb:11:
+</pre>
+
+Turns out Facets #tap is stomping on another #tap.
+
+h2. Enter facet library loading.
+
+Instead of loading the entire Facets library, load what you need.
+I knew this.  You knew this.  It was just convenient to ignore it.
+I'm using Facets for ergo.  That's it.  No need for the kitchen sink.
+
+Replace:
+{% highlight ruby %}
+config.gem 'facets', :version => '=2.5.2'
+{% endhighlight %}
+With:
+{% highlight ruby %}
+config.gem 'facets', :version => '=2.5.2', :lib => 'facets/kernel/ergo'
+{% endhighlight %}
+
+Done.  Error averted.  Tiny library loaded.
+
+h2. Now... what about specs?
+
+I prefer to write a failing spec that identifies a "bug" and then write code to make it pass.
+This issue broke many existing specs, so I feel that I am covered.
+Still... it would be nice to have something which identifies this particular issue AND the fix for it.
