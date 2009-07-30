@@ -49,4 +49,4 @@ Here's a screenshot:
 !(screenshot)/images/Facets_formatted.png(Formatted code screenshot)!
 Argh.
 
-Maybe these guys can help: http://support.github.com/discussions/site/701-formatting-issues-for-github-pages-pygment-related
+Maybe these guys can help: "github support ticket":http://support.github.com/discussions/site/701-formatting-issues-for-github-pages-pygment-related
