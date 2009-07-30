@@ -208,3 +208,7 @@ ul.posts {
   height: 16px;
 }
 
+.screenshot {
+  border: 1px solid blue;
+}
+

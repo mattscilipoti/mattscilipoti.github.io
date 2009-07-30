@@ -40,3 +40,10 @@ h2. Now... what about specs?
 I prefer to write a failing spec that identifies a "bug" and then write code to make it pass.
 This issue broke many existing specs, so I feel that I am covered.
 Still... it would be nice to have something which identifies this particular issue AND the fix for it.
+
+h2. Update (07/29/2009): funky formatting.
+
+I see the code format isn't quite right.  It works locally (using `jekyll --pygments --auto --server`).
+Here's a screenshot:
+!(screenshot)/images/Facets_formatted.png(Formatted code screenshot)!
+Argh.
