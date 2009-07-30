@@ -27,6 +27,7 @@ Replace:
 {% highlight ruby %}
 config.gem 'facets', :version => '=2.5.2'
 {% endhighlight %}
+
 With:
 {% highlight ruby %}
 config.gem 'facets', :version => '=2.5.2', :lib => 'facets/kernel/ergo'
