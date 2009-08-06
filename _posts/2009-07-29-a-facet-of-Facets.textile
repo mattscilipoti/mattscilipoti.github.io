@@ -48,6 +48,7 @@ Still... it would be nice to have something which identifies this particular iss
 
 h2. Update (07/29/2009): funky formatting.
 
+  %(update)Update (07/30/2009): using div as workaround.%
 I see the code format isn't quite right.  It works locally (using `jekyll --pygments --auto --server`).
 Here's a screenshot:
 !(screenshot)/images/Facets_formatted.png(Formatted code screenshot)!

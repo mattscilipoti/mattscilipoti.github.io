@@ -212,3 +212,6 @@ ul.posts {
   border: 1px solid blue;
 }
 
+.update {
+  font-style: italic;
+}
