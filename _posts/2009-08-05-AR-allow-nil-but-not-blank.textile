@@ -1,0 +1,37 @@
+---
+published: false
+layout: post
+title: ActiveRecord field can be nil, can NOT be blank.
+---
+
+h1. {{ page.title }}
+
+p(meta). 05 Aug 2009 - Bethesda, MD
+
+I have this field: url.
+It should not be blank.
+It can be nil.
+
+How do you spec this?
+
+h2. before_save?
+  spec?
+
+h2. validates_presence_of?  :allow_nil => true
+  Nope.
+
+h2. before_validaton
+
+{ highlight ruby }
+describe Antibody, 'validations' do
+  it "should convert blank url to nil" do
+    @it = Factory.build :antibody
+    @it.url = "  "
+    @it.url.should be_blank
+    @it.valid?
+    @it.url.should be_nil
+  end
+end
+{ endhighlight }
+
+
