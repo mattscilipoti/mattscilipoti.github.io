@@ -1,0 +1,26 @@
+---
+published: false
+layout: post
+title: script/runner and cron
+---
+
+h1. {{ page.title }}
+
+p(meta). 03 Aug 2009 - Linthicum, MD
+
+We have a few process that run every 2 hours. We initially created ruby scripts with loops, which slept for 2 hours. This was quick and easy, and workled fine until the database connection was severed for second. We had a few different issues, all of which were intermittent, but these process couldn’t handle them when their nap was over. We noticed that these activities would have performed fine if they had been started every 20 minutes, instead of sleeping during that time.
+
+We stared these scripts using commands like this:
+
+
+<pre>
+  script/runner ping_em_all.rb | tee -a log/ping.log
+</pre>
+
+h2. Enter cron.
+
+Google research led me to believe that I simply needed to add an entry to cron, with the exact command arguments we used to start them manually (after removing the loop). With two exceptions:
+
+    * we needed to call it with ruby.
+    * everything needed fully qualified paths.
+
