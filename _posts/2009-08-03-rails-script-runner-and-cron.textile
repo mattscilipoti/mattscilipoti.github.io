@@ -39,7 +39,7 @@ This was my first use of cron, beyond very basic things which had 'just worked'.
  # Check syslog to see if the command was called.  Check.  We see the command.  We need email.
  # Setup email.  More googling.  Another call (thanks!).  "japhr just did this":http://japhr.blogspot.com/2009/08/moving-past-beta.html.  sweet.  "setup for google apps":http://serverfault.com/questions/54069/how-to-setup-ubuntu-mail-server-with-google-apps.  done.
  # test: `echo -e "To: Me\nSubject: ssmtp test\n\nssmtp test" | /usr/sbin/ssmtp youraddress@example.com`.  ??{color:green}Pass.??
- # Email arrives from cron, indicating issues: no mail-to address.  I add it to `crontab -e`: http://gist.github.com/169729
+ # Email arrives from cron, indicating issues: no mail-to address.  I add it to `crontab -e` ("gist":http://gist.github.com/169729).
  # Email arrives from cron, listing my failed validations.  Nice.
 
 
@@ -48,7 +48,7 @@ This was my first use of cron, beyond very basic things which had 'just worked'.
 
 h2.  Enter script/local_runner.sh
 
-We created a simple bash script to change to RAILS_ROOT and run script/runner: http://gist.github.com/169729.
+We created a simple bash script to change to RAILS_ROOT and run script/runner ("gist":http://gist.github.com/169729).
 
 After that, we simply responded to the emails.
  # Setup cron to run every minute (*/1).
@@ -56,11 +56,11 @@ After that, we simply responded to the emails.
  # Then we added the script.
  # It needs $TIPS_ROOT.  cron isn't loading my bash.rc and a path with my home dir doesn't belong in /etc, so I add it to crontab -e.
  # Then we added the log file.
- # There was an issue including the append output to log file command (>>) in crontab, so I converted the log file to an argument.  argh.
+ # There was an issue including the append output to log file command (>>) in crontab, so I converted the log file to an argument.  bleh.
 
 ??{color:green}PASS.??
 
-See a working version:  http://gist.github.com/169729
+Get the "gist":http://gist.github.com/169729.
 
 
 h2. A (very) brief intro to cron.
