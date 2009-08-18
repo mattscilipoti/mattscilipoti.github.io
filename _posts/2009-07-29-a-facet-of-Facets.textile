@@ -8,6 +8,7 @@ h1. {{ page.title }}
 p(meta). 29 Jul 2009 - Bethesda, MD
 
 I just updated to Rails 2.3.3 and my controllers screamed:
+
 <pre>
 undefined local variable or method `set_test_assigns' for #<ActionController::TestResponse:0xb5d0b488>
 /home/matt/.gem/ruby/1.8/gems/facets-2.5.2/lib/core/facets/kernel/tap.rb:9:in `instance_eval'
@@ -24,19 +25,17 @@ Instead of loading the entire Facets library, load what you need.
 I knew this.  You knew this.  It was just convenient to ignore it.
 I'm using Facets for ergo.  That's it.  No need for the kitchen sink.
 
-<div>
 Replace:
 
 {% highlight ruby %}
 config.gem 'facets', :version => '=2.5.2'
 {% endhighlight %}
-</div>
 
-<div>
 With:
 
-{% highlight ruby %}config.gem 'facets', :version => '=2.5.2', :lib => 'facets/kernel/ergo'{% endhighlight %}
-</div>
+{% highlight ruby %}
+config.gem 'facets', :version => '=2.5.2', :lib => 'facets/kernel/ergo'
+{% endhighlight %}
 
 Done.  Error averted.  Tiny library loaded.
 
