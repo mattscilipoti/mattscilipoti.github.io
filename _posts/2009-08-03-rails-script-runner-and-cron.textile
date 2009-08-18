@@ -8,10 +8,10 @@ h1. {{ page.title }}
 
 p(meta). 03 Aug 2009 - Linthicum, MD
 
-We have a few process that run every 2 hours. We initially created ruby scripts with loops, which slept for 2 hours. This was quick and easy, and workled fine until the database connection was severed for second. We had a few different issues, all of which were intermittent, but these process couldn’t handle them when their nap was over. We noticed that these activities would have performed fine if they had been started every 20 minutes, instead of sleeping during that time.
+h2.  Intermittent processes
+We have just started to run some daemon-like processes with check status at various time intervals.  We started with a simple ruby script which looped, sleeping between runs.  This was quick and easy, and worked fine until the database connection was severed for second. We had a few different issues, all of which were intermittent, but these processes could not handle them when their nap was over. We noticed that these activities would have performed fine if they had been started every 20 minutes, instead of sleeping during that time.
 
 We stared these scripts using commands like this:
-
 
 <pre>
   script/runner ping_em_all.rb | tee -a log/ping.log
@@ -24,3 +24,49 @@ Google research led me to believe that I simply needed to add an entry to cron, 
     * we needed to call it with ruby.
     * everything needed fully qualified paths.
 
+Fail.  Silently.
+
+h2.  Debugging cron
+
+This was my first use of cron, beyond very basic things which had 'just worked'.  This wasn't working and I had no indication of why.  After some googling and a call to nevans, I was up to speed.
+ #. Check your email to see the output from cron.
+ #. No email.  Of course, no email was setup on this dev box.
+ #. Check syslog to see if the command was called.  Check.  We see the command.  We need email.
+ #. Setup email.  More googling.  Another call (thanks!).  "japhr just did this":http://japhr.blogspot.com/2009/08/moving-past-beta.html.  sweet.  "setup for google apps":http://serverfault.com/questions/54069/how-to-setup-ubuntu-mail-server-with-google-apps.  done.
+ #. test: `echo -e "To: Me\nSubject: ssmtp test\n\nssmtp test" | /usr/sbin/ssmtp youraddress@example.com`.  Pass.
+ #. Email arrives from cron, indicating issues: no mail-to address.  I add it to `crontab -e`: http://gist.github.com/169729
+ #. Email arrives from cron, listing my failed validations.  Nice.
+
+ Fail.  Rails expects things to be run from RAILS_ROOT.  We needed a `cd`.
+
+h2.  Enter script/local_runner.sh
+
+We created a simple bash script to change to RAILS_ROOT and run script/runner: http://gist.github.com/169729.
+
+After that, we simply responded to the emails.
+ #. Setup cron to run every minute (*/1).
+ #. First we got to pass with just script/runner.
+ #. Then we added the script.
+ #. It needs $TIPS_ROOT.  cron isn't loading my bash.rc and a path with my home dir doesn't belong in /etc, so I add it to crontab -e.
+ #. Then we added the log file.
+ #. There was an issue including the append output to log file command (>>) in crontab, so I converted the log file to an argument.  argh.
+
+Pass.
+
+See a working version:  http://gist.github.com/169729
+
+
+h2. A brief intro to cron.
+
+cron - daemon to execute scheduled commands
+ * Sends email with output from each run.  Note: this is the only way to debug.
+ * Logs to syslog (only indicates that entry was run, no output).
+ * edit: `crontab -e`
+ * list: `crontab -l`
+ * The method to schedule your jobs can be a little confusing at first, but its power and simplicity is soon apparent.  Google helps.  So do the examples in `cheat cron`.
+
+
+h2. References:
+
+ * `cheat cron`
+ *
