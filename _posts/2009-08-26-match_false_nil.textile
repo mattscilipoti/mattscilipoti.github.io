@@ -1,0 +1,14 @@
+---
+published: false
+layout: post
+title: match false? or nil?
+---
+
+h1. {{ page.title }}
+
+p(meta). 26 Aug 2009 - Linthicum, MD
+
+
+nil =~ 'test' -> false
+'bad' =~ 'test' -> nil
+'test' =~ 'test' -> 0
