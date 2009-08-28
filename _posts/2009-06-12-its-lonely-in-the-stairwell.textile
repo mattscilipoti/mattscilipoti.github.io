@@ -1,13 +1,13 @@
-----
+---
 published: false
 layout: post
 title: It's lonely in the stairwell.
-----
+---
 It's clear to me that... Americans ignore stairs.
 Dark, dank, dingy.
 
 h3. For Instance
 
-There is evidence that hotel steps are only used by staff. 
+There is evidence that hotel steps are only used by staff.
  *  above 1st Floor are well used.
 
