@@ -1,0 +1,24 @@
+---
+published: true
+layout: post
+title: github pages, jekyll, and pygments
+---
+
+h1. {{ page.title }}
+
+p(meta). 27 Aug 2009 - Linthicum, MD
+
+This blog is run on "github pages":http://pages.github.com/.  They use "Pygments":http://pygments.org/ for code syntax highlighting.
+
+To test it locally, I run:
+
+{% highlight bash %}jekyll --pygment --auto --server{% endhighlight %}
+
+This requires Pygments, which requires python.
+
+{% highlight sh %}
+sudo apt-get install python-setuptools
+sudo easy_install Pygments
+{% endhighlight %}
+
+
