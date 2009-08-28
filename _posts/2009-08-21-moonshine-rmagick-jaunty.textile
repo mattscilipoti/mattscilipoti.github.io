@@ -1,0 +1,48 @@
+---
+published: true
+layout: post
+title: moonshine, rmagick, and jaunty
+---
+
+h1. {{ page.title }}
+
+
+p(meta). 21 Aug 2009 - Linthicum, MD
+
+h2.  Moonshine
+
+"Moonshine":moonshine is "rails deployment and configuration management done right. ShadowPuppet + Capistrano == crazy delicious"
+
+We are going through a phase of server 'provisioning'.  We need a demo server, one for load testing, and an updated ci server.  We are also moving some production servers from Windows to Ubuntu.  yay!
+
+Moonshine embraces convention and combines *rails* provisioning and deployment in a nice package.  We enjoy it.
+
+h2. gem library dependencies
+
+Some gems have system library dependencies (rmagick requires imagemagick, etc).  Moonshine already has a "recipes" for a few (see apt_gems.yml).  When moonshine is installing a gem, it also installs any libraries listed for that gem.  You can easily add your own in your moonshine.yml.
+
+*Gotcha:* Unfortunately (as we just discovered), your moonshine.yml entries do not override existing entries in apt_gems.yml.  There are two options for overriding:
+ # replace the entry in the plugin's apt_gems.yml
+ # comment out the entry in the plugin's apt_gems.yml, then add your own entry in moonshine.yml.
+
+We chose #2.
+
+h2.  Jaunty & rmagick
+
+While "moonshine":moonshine is, currently, only supported on Ubuntu 8.10 (Intrepid Ibex, really?  Not LTS or the latest release? Interesting choice.)  We have only found one issue with Jaunty (9.04).  New library dependencies for rmagick/imagemagick.
+
+Here are the rmagick dependencies in jaunty:
+
+<pre>
+:apt_gems:
+  rmagick:
+    - imagemagick
+    - libmagickcore-dev
+    - libmagickwand-dev
+</pre>
+
+Note:
+ * We are using the string version, not the symbol (for rmagick).  Either may work, we haven't tested the symbol yet.
+ * We are using rmagick -v 2.9.2.
+
+[moonshine]http://github.com/railsmachine/moonshine/tree/master
