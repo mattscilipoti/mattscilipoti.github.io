@@ -1,14 +1,75 @@
 ---
 published: false
 layout: post
-title: match false? or nil?
+title: regex match false? or nil?
 ---
 
 h1. {{ page.title }}
 
 p(meta). 26 Aug 2009 - Linthicum, MD
 
+We have some scripts we run which are "instrumented" with messages and progress bars.
 
-nil =~ 'test' -> false
-'bad' =~ 'test' -> nil
-'test' =~ 'test' -> 0
+Two issues:
+ # These are muddying up our specs
+ # In production, the progress bars can raise "Broken Pipe" errors (std out issues?).
+
+We will probably create some abstraction for this concept, but we started with:
+
+{% highlight ruby %}
+puts "It's working." if show_instrumentation?
+{% endhighlight %}
+
+The specs:
+
+{% highlight ruby %}
+describe '#show_instrumentation?' do
+  it "should default to false" do
+    @it.show_instrumentation?.should be_false
+    #@it.should_not be_show_instrumentation
+  end
+end
+
+describe '#show_instrumentation?' do
+  it "should be true if ENV['INFO']=true" do
+    ENV['INFO'] = true
+    @it.show_instrumentation?.should be_true
+  end
+end
+{% endhighlight %}
+
+The code:
+
+{% highlight ruby %}
+def show_instrumentation?
+  @show_instrumentation ||= (ENV['info'] =~ /true/i)
+end
+{% endhighlight %}
+
+This worked.  But sometimes, ENV['INFO'] == 'true' when the first spec was run (spec --reverse).  So.. we added the after:
+
+{% highlight ruby %}
+after :each do
+  ENV['info'] = ''
+end
+{% endhighlight %}
+
+Fail.  nil is not false.
+
+Turns out:
+
+{% highlight ruby %}
+''      =~ /true/i -> nil
+'false' =~ /true/i -> nil
+'TRUE'  =~ /true/i -> 0
+nil     =~ /true/i -> false
+{% endhighlight %}
+
+So... how do you return a boolean from =~?
+
+
+{% highlight ruby %}
+def show_instrumentation?
+  @show_instrumentation ||= (ENV['info'] =~ /true/i) >= 0
+end
+{% endhighlight %}
