@@ -1,0 +1,65 @@
+---
+layout: post
+title: Rails and PostgreSQL on Snow Leopard using homebrew
+---
+
+h1. {{ page.title }}
+
+p(meta). 29 Apr 2010 - Laurel, MD
+
+As we have seen in the past, I couldn't find a definitive, accurate install and use guide for PostgreSQL with Rails on Snow Leopard, using homebrew.  In the end, it took less work than any of the existing instruction lists (that I found) indicated.  
+
+Of Note: I did NOT need to make any changes to my $PATH or .profile.
+
+Most of this is based on info from: 
+ * http://blog.tquadrado.com/?p=215
+ * test
+ * http://www.gregbenedict.com/2009/08/31/installing-postgresql-on-snow-leopard-10-6/
+
+Thank you all for the helpful info.
+
+
+h2. Installation
+
+We assume you have homebrew installed.
+Note: I did not allow incoming network connections.  You may, but everything I discuss works without it.
+
+  <code>$ brew install postgresql #postgres is alias</code>
+  
+Follow the instructions for initializing (initdb...).
+Follow the instructions for automatic load, if applicable (launchctl...)
+
+That's it.  I didn't need any of the mkdir and chown commands some instructions listed.
+
+Install the fast postgres gem:
+  <code>  $ gem install pg </code>
+
+Installation complete.
+
+
+h2. Rails
+
+The docs indicate that a superuser named 'postgres' is created by default.  
+Instead, my installation created a superuser named after the logged in user: $USER.
+
+To make sharing the database.yml easier, I created another user:
+<code>
+  $ createuser --superuser your_company_name -U $USER
+</code>
+
+Now update your database.yml:
+
+<pre>
+development:
+  adapter: postgresql
+  database: health_crowd_dev
+  username: your_company_name
+  host: localhost
+</pre>
+
+Some instructions list more settings.  These worked for me.
+
+You are ready.
+<code>  $ rake db:create</code>
+
+fini.
