@@ -9,23 +9,22 @@ p(meta). 06 May 2010 - Laurel, MD
 
 Getting a SocketError while sending emails on heroku, using sendgrid?  It may be some gmail env vars.
 
-While working on a project that I just inherited, we enabled sendgrid for our heroku app.  Upon sending an email, we received:
+While working on a project that I just inherited, we enabled sendgrid for our heroku app.  Sending an email raised this error:
+
 h2. SocketError (getaddrinfo: Name or service not known)
 
 Google searches indicated ActiveMailer configuration issues, but Heroku was pretty clear:
   <pre>Rails apps using ActionMailer will just work, no setup is needed after the addon is installed.</pre>
   
 While ensuring that RACK_ENV was set correctly (when all else fails), I found these two settings:
-<pre>
-GMAIL_SMTP_PASSWORD         => #blahblah#
-GMAIL_SMTP_USER             => admin@xyz.com
-</pre>
+<pre>GMAIL_SMTP_PASSWORD         => #blahblah#
+GMAIL_SMTP_USER             => admin@xyz.com</pre>
 
-Removing them fixed my email.
+Removing them fixed my email.  Sendgrid is working fine.
 
-Armed with this evidence, I found: http://blog.heroku.com/archives/2009/11/9/tech_sending_email_with_gmail/
-And so... someone had (partially) set up the server for gmail, but something about it was failing now.
+Armed with this evidence, I found "tech_sending_email_with_gmail":http://blog.heroku.com/archives/2009/11/9/tech_sending_email_with_gmail/
+And so... someone had  set up the server for gmail, but something about it was failing now.
 
 Now I know.  And you do too.
 
-Note: this is just one way to receive this error.
+Note: this is just *one* cause of this error.
