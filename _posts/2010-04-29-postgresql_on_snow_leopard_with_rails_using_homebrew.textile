@@ -7,6 +7,8 @@ h1. {{ page.title }}
 
 p(meta). 29 Apr 2010 - Laurel, MD
 
+Update: 12 May 2010.  Updated automatic load instructions.
+
 As we have seen in the past, I couldn't find a definitive, accurate install and use guide for PostgreSQL with Rails on Snow Leopard, using homebrew.  In the end, it took less work than any of the existing instruction lists (that I found) indicated.  
 
 Of Note: I did NOT need to make any changes to my $PATH or .profile.
@@ -35,6 +37,17 @@ Install the fast postgres gem:
   <code>  $ gem install pg </code>
 
 Installation complete.
+
+UPDATE:
+If postgres is not loading on boot OR you see:
+<code>launchctl: Dubious ownership on file (skipping): /usr/local/Cellar/postgresql/8.4.3/org.postgresql.postgres.plist
+nothing found to load</code>
+
+Then this should fix it:
+<code> 
+  sudo chown root:wheel /usr/local/Cellar/postgresql/8.4.3/org.postgresql.postgres.plist
+  sudo launchctl load -w /usr/local/Cellar/postgresql/8.4.3/org.postgresql.postgres.plist
+</code>
 
 
 h2. Rails
