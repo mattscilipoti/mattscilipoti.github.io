@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I18n Quick Reference (for Rails 3 and common gems)
+title: I18n for Rails 3 and common gems (Part One)
 published: true
 ---
 
@@ -8,11 +8,16 @@ h1. {{ page.title }}
 
 p(meta). 14 Sept 2010 - Baltimore, MD
 
+Part One:  Discussion
+Part Two:  Quick Reference
+
+----
+
 You're building a Rails 3 app.  
 It needs to support internationalization (I18n).  
 No problem.  Rails 3 supports internationalization.  
 
-You can use *translate(key)* or *t(key)*.  
+You can use **translate(key)** or **t(key)**.  
 
 {% highlight haml %}
 
@@ -39,25 +44,28 @@ __(Aside: I will be using en.yml throughout this post, any language file could b
 ----
 
 But, we're using Rails.  We expect conventions.  And smart defaults.  
-I shouldn't need to use *t(key)* wherever I need translations.
+I shouldn't need to use **t(key)** wherever I need translations.
 
 h2. My expectations
 
-# Items that can be internationalized should have smart defaults.  I should not have to make an entry like:
-pre.
-    labels:
-      name: Name
-# Similarly, there should be fallback/common/generic entries.  If an error message doesn't exist for this validation, on this specific model, use the generic message for this validation.  If a generic message doesn't exist in the localization file, fall back to the smart default.
-pre.
-  create_success: "%{model} created"
-  create_fail: "The %{model} could not be created:"
+*1.* Items that can be internationalized should have smart defaults.  I should not have to make an entry like:
 
-  vs.
+pre. labels:
+  name: Name
 
-  tour_versions:
+*2.* Similarly, there should be fallback/common/generic entries.  If an error message doesn't exist for this validation, on this specific model, use the generic message for this validation.  If a generic message doesn't exist in the localization file, fall back to the smart default.
+The generic:
+
+pre.  create_success: "%{model} created"
+ create_fail: "The %{model} could not be created:"
+
+The specific:
+
+pre.  tour_versions:
     create:
       success: Your tour was successfully published.
-# Where possible, libraries should follow the rails conventions instead of inventing their own.  This allows me to switch (or simply remove) libraries and I18n still works.
+
+*3.* Where possible, libraries should follow the rails conventions instead of inventing their own.  This allows me to switch (or simply remove) libraries and I18n still works.
       
 
 h2. What I Found
@@ -76,3 +84,7 @@ SimpleForm deals with label, hint, and error.
 cancan presents a 'not authorized' message.
 
 So... expectations #1 & 2 are generally covered.  But, sadly, #3 is not.
+
+A Quick Reference for each library will be provided after this commercial break...
+
+!http://www.bigrat.co.uk/images/music/commbreak.jpg!
