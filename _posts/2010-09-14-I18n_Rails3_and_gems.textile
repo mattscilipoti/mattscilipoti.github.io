@@ -1,7 +1,7 @@
 ---
 layout: post
-title: I18n conventions for Rails 3 and common gems
-published: false
+title: I18n Quick Reference (for Rails 3 and common gems)
+published: true
 ---
 
 h1. {{ page.title }}
@@ -9,7 +9,7 @@ h1. {{ page.title }}
 p(meta). 14 Sept 2010 - Baltimore, MD
 
 You're building a Rails 3 app.  
-It needs to support internationalization.  
+It needs to support internationalization (I18n).  
 No problem.  Rails 3 supports internationalization.  
 
 You can use *translate(key)* or *t(key)*.  
@@ -34,11 +34,35 @@ Yielding...
 
 h2. Hey y'all
 
+__(Aside: I will be using en.yml throughout this post, any language file could be used.)__
+
 ----
 
-But, we're in Rails.  We expect conventions.
+But, we're using Rails.  We expect conventions.  And smart defaults.  
+I shouldn't need to use *t(key)* wherever I need translations.
 
-Platformatec has a nice "listing of Rails I18n conventions":http://blog.plataformatec.com.br/2010/02/rails-3-i18n-changes/.
+h2. My expectations
+
+# Items that can be internationalized should have smart defaults.  I should not have to make an entry like:
+pre.
+    labels:
+      name: Name
+# Similarly, there should be fallback/common/generic entries.  If an error message doesn't exist for this validation, on this specific model, use the generic message for this validation.  If a generic message doesn't exist in the localization file, fall back to the smart default.
+pre.
+  create_success: "%{model} created"
+  create_fail: "The %{model} could not be created:"
+
+  vs.
+
+  tour_versions:
+    create:
+      success: Your tour was successfully published.
+# Where possible, libraries should follow the rails conventions instead of inventing their own.  This allows me to switch (or simply remove) libraries and I18n still works.
+      
+
+h2. What I Found
+
+Platformatec has a "nice listing of Rails I18n conventions":http://blog.plataformatec.com.br/2010/02/rails-3-i18n-changes/.
 
 On our project, we use simple_form, inherited_resources, and cancan.  
 Each one has a convention for I18n.  
@@ -46,7 +70,9 @@ Each one different.
 
 Luckily, the functionality doesn't overlap... much.
 
-Rails covers 
-InheritedResources covers flash.
+Rails covers error message defaults, attributes, submit buttons, and labels.
+InheritedResources covers flash (using Responders).
 SimpleForm deals with label, hint, and error.
-cancan presents an invalid login message.
+cancan presents a 'not authorized' message.
+
+So... expectations #1 & 2 are generally covered.  But, sadly, #3 is not.
