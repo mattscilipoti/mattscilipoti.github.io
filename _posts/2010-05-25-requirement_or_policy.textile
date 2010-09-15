@@ -1,0 +1,24 @@
+---
+layout: post
+title: Requirement? Or Policy?
+published: false
+---
+
+h1. {{ page.title }}
+
+p(meta). 25 May 2010 - Laurel, MD
+
+Here's a "simple" phrase that may save you some headaches.
+
+Code the requirement, pass the policy.
+
+
+
+{% highlight ruby %}
+And 'I have filled out my billing info' do
+  @client.update_attribute :billing_info_valid, true
+     
+And 'I have filled out my billing info' do
+  Factory(:payment_card, :user => @client)
+  
+{% endhighlight %}

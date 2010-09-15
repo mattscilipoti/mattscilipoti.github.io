@@ -1,0 +1,52 @@
+---
+layout: post
+title: I18n conventions for Rails 3 and common gems
+published: false
+---
+
+h1. {{ page.title }}
+
+p(meta). 14 Sept 2010 - Baltimore, MD
+
+You're building a Rails 3 app.  
+It needs to support internationalization.  
+No problem.  Rails 3 supports internationalization.  
+
+You can use *translate(key)* or *t(key)*.  
+
+{% highlight haml %}
+
+%h2= t('hello')
+
+{% endhighlight %}
+
+It looks up the key in config/locales/en.yml:
+
+{% highlight yaml %}
+
+en:
+  hello:
+    Hey y'all
+
+{% endhighlight %}
+
+Yielding...
+
+h2. Hey y'all
+
+----
+
+But, we're in Rails.  We expect conventions.
+
+Platformatec has a nice "listing of Rails I18n conventions":http://blog.plataformatec.com.br/2010/02/rails-3-i18n-changes/.
+
+On our project, we use simple_form, inherited_resources, and cancan.  
+Each one has a convention for I18n.  
+Each one different.
+
+Luckily, the functionality doesn't overlap... much.
+
+Rails covers 
+InheritedResources covers flash.
+SimpleForm deals with label, hint, and error.
+cancan presents an invalid login message.

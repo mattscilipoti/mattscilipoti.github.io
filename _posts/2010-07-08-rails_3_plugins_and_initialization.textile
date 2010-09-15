@@ -1,0 +1,76 @@
+---
+layout: post
+title: Rails 3 plugins and initialization
+published: false
+---
+
+h1. {{ page.title }}
+
+p(meta). 08 June 2010 - Baltimore, MD
+
+I like using an in-memory database.  It's fast AND I don't have to play schema load games.  The latest schema is automatically used... if you are using the memory_test_fix plugin.
+
+As of 2010-07-08, this plugin does not support Rails 3. It is a very simple plugin.  One file.  The code is below.  Basically, it ensures the schema is loaded during startup, if you are using an in-memory database.  This looked like a perfect opportunity to learn about plugins and rails 3.
+
+This post documents my struggles to upgrade it.
+
+After the appropriate setup (see http://bit.ly/memory_test_fix) with minor updates for Rails 3:
+    rails plugin install http://topfunky.net/svn/plugins/memory_test_fix
+
+Problem: schema is not loaded
+Cause: This condition failed: ENV["RAILS_ENV"] == "test".  Rails.env => 'development'
+
+Hypothesis: I should load the plugin after environment AR has initialized.
+Attempt:
+  
+
+
+
+== The code
+
+{% highlight ruby %}
+# Update: Looks for the SQLite and SQLite3 adapters for
+# compatibility with Rails 1.2.2 and also older versions.
+def in_memory_database?
+  if ENV["RAILS_ENV"] == "test" and
+    (Rails::Configuration.new.database_configuration['test']['database'] == ':memory:' or
+    Rails::Configuration.new.database_configuration['test']['dbfile'] == ':memory:')
+    begin
+      if ActiveRecord::Base.connection.class == ActiveRecord::ConnectionAdapters::SQLite3Adapter
+        return true
+      end
+    rescue NameError => e
+      if ActiveRecord::Base.connection.class == ActiveRecord::ConnectionAdapters::SQLiteAdapter
+        return true
+      end
+    end
+  end
+  false
+end
+
+def verbosity
+  Rails::Configuration.new.database_configuration['test']['verbosity']
+end
+
+def inform_using_in_memory
+  puts "Creating sqlite :memory: database"
+end
+
+if in_memory_database?
+  load_schema = lambda {
+    load "#{RAILS_ROOT}/db/schema.rb" # use db agnostic schema by default
+    #  ActiveRecord::Migrator.up('db/migrate') # use migrations
+  }
+  case verbosity
+  when "silent"
+    silence_stream(STDOUT, &load_schema)
+  when "quiet"
+    inform_using_in_memory
+    silence_stream(STDOUT, &load_schema)
+  else
+    inform_using_in_memory
+    load_schema.call
+  end
+end
+
+{% endhighlight %}
