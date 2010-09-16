@@ -9,6 +9,8 @@ h1. {{ page.title }}
 p(meta). 14 Sept 2010 - Baltimore, MD
 
 Part One:  Discussion
+Update 1: "Entries to assist translators":#update_1
+
 Part Two:  Quick Reference
 
 ----
@@ -53,6 +55,11 @@ h2. My expectations
 pre. labels:
   name: Name
 
+<a name="update_1">
+
+p(update)..    *Update 2010-09-16:*  My co-worker, Chris Cahoon, shares a great point.  We probably *want* to make entries like `name: Name`, to assist translators.  Allowing them to just go down the line translating each entry in the file.  Otherwise, many items will not be translated.  This makes tools like "Tolk":http://github.com/tokumine/tolk especially helpful.
+
+
 *2.* Similarly, there should be fallback/common/generic entries.  If an error message doesn't exist for this validation, on this specific model, use the generic message for this validation.  If a generic message doesn't exist in the localization file, fall back to the smart default.
 The generic:
 
@@ -66,7 +73,6 @@ pre.  tour_versions:
       success: Your tour was successfully published.
 
 *3.* Where possible, libraries should follow the rails conventions instead of inventing their own.  This allows me to switch (or simply remove) libraries and I18n still works.
-      
 
 h2. What I Found
 
