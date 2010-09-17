@@ -18,11 +18,15 @@
 
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-
+   
   <script src="http://www.google.com/jsapi"></script>
-  <script>
+  <script type="text/javascript">
     // from henrik.github.com
     google.load("jquery", "1");
+    google.load("jqueryui", "1");
+  </script>
+  
+  <script type="text/javascript">
     google.setOnLoadCallback(function() {
       
        getRepos('mattscilipoti', function(repos) {
@@ -92,6 +96,13 @@
 
 <a href="http://github.com/mattscilipoti"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
+<script  type="text/javascript">
+//<![CDATA[
+  $(document).ready(function() {
+    $('p.update').effect("highlight", {}, 3000);
+  });
+//]]>
+</script>
 
 </body>
 </html>
