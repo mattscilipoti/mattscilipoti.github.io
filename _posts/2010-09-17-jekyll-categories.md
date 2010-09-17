@@ -26,8 +26,12 @@ Just assign a yaml list to categories in your page meta:
 Listing and linking to them was harder than I expected.
 I was forced to create a page for each category that I wanted a list of posts for (code.html, ruby.html).
 
+<p class="update">Update: I went to great pains to format this liquid code (within liquid).  Even using the `--safe` argument on my jekyll server.  But, it still formatted differently on github pages.  I hope to figure out a workaround shortly.  Until then, check out the source [at github](http://github.com/mattscilipoti/mattscilipoti.github.com).
+</p>
+
+
 For each post, I expected to get a nice list of assigned categories using:
-    {{" {{ post.categories | array_to_sentence_string "}} }}
+    {{ " {{ post.categories | array_to_sentence_string " }} }}
   instead, I got:
     {{ post.categories | array_to_sentence_string }}
   
@@ -36,7 +40,7 @@ Then I tried this (and variations):
     <div id="categories">
       <h2>In this post:</h2>
       <ul class="categories">
-        {{ "{% for category in post.categories " }} %}
+        {{" {% for category in post.categories "}} %}
           <li><a href="/{{"{{ category[0] "}} }}.html">{{" {{ category[0] "}} }}</a></li>
         {{" {% endfor"}} %}
       </ul>
