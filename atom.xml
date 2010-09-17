@@ -11,7 +11,7 @@ layout: nil
  <id>http://blog.clear2.me/</id>
  <author>
    <name>Matt Scilipoti</name>
-   <email>matts@possiamo.com</email>
+   <email>matt@scilipoti.name</email>
  </author>
 
  {% for post in site.posts %}
