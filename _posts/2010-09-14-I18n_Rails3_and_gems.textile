@@ -2,6 +2,11 @@
 layout: post
 title: I18n for Rails 3 and common gems (Part One)
 published: true
+categories:
+- code
+- I18n
+- rails
+- ruby
 ---
 
 h1. {{ page.title }}
