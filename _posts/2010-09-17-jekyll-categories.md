@@ -26,7 +26,7 @@ Just assign a yaml list to categories in your page meta:
 Listing and linking to them was harder than I expected.
 I was forced to create a page for each category that I wanted a list of posts for (code.html, ruby.html).
 
-<p class="update">Update: I went to great pains to format this liquid code (within liquid).  Even using the `--safe` argument on my jekyll server.  But, it still formatted differently on github pages.  I hope to figure out a workaround shortly.  Until then, check out the source [at github](http://github.com/mattscilipoti/mattscilipoti.github.com).
+<p class="update">Update: I went to great pains to format this liquid code (within liquid).  Even using the `--safe` argument on my jekyll server.  But, it still formatted differently on github pages.  I hope to figure out a workaround shortly.  Until then, check out the source <a href="http://github.com/mattscilipoti/mattscilipoti.github.com"> at github</a>.
 </p>
 
 
