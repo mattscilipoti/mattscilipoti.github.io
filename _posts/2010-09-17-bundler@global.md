@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Embracing the Global Gemset
+title: Embracing RVM's Global Gemset
 categories:
 - ruby
 - rvm
