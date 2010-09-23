@@ -1,0 +1,24 @@
+---
+layout: post
+title: Moonshine hearts Rails3 (and Bundler)
+published: true
+categories:
+- code
+- rails3
+- moonshine
+---
+
+h1. {{ page.title }}
+
+p(meta). 23 Sept 2010 - Baltimore, MD
+
+Moonshine and Rails3 sitting in a tree...
+
+As of today, moonshine is working nicely with Rails3 and Bundler.  Whew!  
+
+I don't know about you, but I missed the friendly voice of moonshine, "let me handle this provisioning and deployment for you, sir."
+
+Kudos go out to Josh (technicalpickles) and Rails Machine!  He is wrapping up the last bits as this goes to press.
+
+Thanks!
+
