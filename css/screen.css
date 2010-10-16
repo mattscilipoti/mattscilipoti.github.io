@@ -19,12 +19,16 @@ body {
   background-color: white;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
-  text-align: center;
+  margin-left: 2em;
+/*  text-align: center; */
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
+
 
 h1 {
   margin-bottom: 1em;
@@ -84,12 +88,12 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 40em;
+  /* width: 40em; */
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
 
-.title {
+.title {  
   color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
@@ -119,6 +123,8 @@ ul.posts {
   }
 
   .site .footer {
+	  width: 40em;
+	  text-align: center;
     font-size: 80%;
     color: #666;
     border-top: 4px solid #eee;
