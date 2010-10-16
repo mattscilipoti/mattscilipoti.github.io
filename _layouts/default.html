@@ -43,13 +43,22 @@
         });
       });
 
+      function sortByName(a,b)
+      {
+    		if(a.name == b.name){
+    			return 0;
+    		}
+
+    		return (a.name < b.name) ? -1 : 1;
+    	}
+
       function getRepos(username, callback) {
         $.getJSON('http://github.com/api/v1/json/'+username+'?callback=?', function(data) {
           var repos = data.user.repositories;
           repos = $.grep(repos, function(r) { return !r.fork });
           repos.sort(function(a, b) { return b.watchers - a.watchers });
           repos = $(repos);
-          callback(repos);
+          callback(repos.sort(sortByName));
         });
       }
     });
