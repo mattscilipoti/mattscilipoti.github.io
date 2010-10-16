@@ -9,7 +9,8 @@ p(meta). 07 Oct 2010 - Balitmore, MD
 
 h2. Problem:
 
-My subscription does not have a subscriber.
+My subscription does not have a subscriber.  
+InheritedResources is not populating the `belongs_to` item.
 
 {% highlight ruby %}
   SubscriptionsController << InheritedResources::Base
@@ -25,7 +26,7 @@ My subscription does not have a subscriber.
 {% endhighlight %}
 
 
-In `def create`, `@subscription.sbscriber` is nil.  This *should* be populated by InheritedResources during #build_resource.
+In `def create`, `@subscription.subscriber` is nil.  This *should* be populated by InheritedResources during #build_resource.
 
 {% highlight ruby %}
   def build_resource
@@ -33,7 +34,7 @@ In `def create`, `@subscription.sbscriber` is nil.  This *should* be populated b
   end
 {% endhighlight %}
 
-  Unfortunately, Cancan's load_resource is populating the @subscription instance var, so build_resource simply returns the value of the instance var.
+Unfortunately, Cancan's load_resource is populating the @subscription instance var, so build_resource simply returns the value of the instance var (get_resource_var).
 
 h2. Solution:
 
@@ -52,6 +53,26 @@ Don't ask cancan to load the resource.
   end
 {% endhighlight %}
 
+Or...
 
+{% highlight ruby %}
+  SubscriptionsController << InheritedResources::Base
+    belongs_to :subscriber
 
-I
+    def create
+      @subscription = build_resource
+      authorize! :create, Subscription
+    	# do something with subscription
+      create!
+    end
+  end
+{% endhighlight %}
+
+Note: this appears to only be an issue if using nested routes.
+
+{% highlight ruby %}
+resources :subscriber do
+  resources :subscription
+{% endhighlight %}
+
+This was identified on Rails 3.  May affect Rails 2.
