@@ -1,0 +1,10 @@
+---
+layout: post
+title: GitHub Pull Requests Practices
+---
+
+h1. {{ page.title }}
+
+p(meta). 19 Oct 2010 - Balitmore, MD
+
+h2. Problem:
