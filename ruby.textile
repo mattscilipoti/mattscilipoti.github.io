@@ -1,6 +1,0 @@
----
-layout: static
-title: ruby
----
-{% assign category_posts = site.categories.ruby %}
-{% include category_page.textile %}
