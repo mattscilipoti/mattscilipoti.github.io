@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GitHub Pull Requests Practices
+published: false
 ---
 
 h1. {{ page.title }}
