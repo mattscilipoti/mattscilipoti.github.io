@@ -1,0 +1,9 @@
+# Ignore bundler config
+.bundle
+
+# Ignore Jekyll build output
+_site
+
+# Ignore logs and temp files
+.jekyll-cache
+.sass-cache

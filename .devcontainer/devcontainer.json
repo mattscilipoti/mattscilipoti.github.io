@@ -1,0 +1,13 @@
+{
+  "name": "Jekyll Development Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {},
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ],
+  "forwardPorts": [4000],
+  "postCreateCommand": "bundle config set --local path 'vendor/bundle' && bundle install",
+  "remoteUser": "vscode"
+}
