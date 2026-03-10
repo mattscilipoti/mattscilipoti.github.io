@@ -1,5 +1,10 @@
-# A sample Gemfile
-source "http://rubygems.org"
+source "https://rubygems.org"
 
-gem 'jekyll', '0.7.0'
-gem 'RedCloth'
+gem "github-pages", group: :jekyll_plugins
+
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
+  gem 'jekyll-textile-converter'
+end
+
+# gem 'RedCloth'

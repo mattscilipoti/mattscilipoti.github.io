@@ -1,4 +1,6 @@
 markdown: rdiscount
+plugins:
+  - jekyll-textile-converter
 pygments: true
 rdiscount:
   extensions: [smart]
