@@ -7,7 +7,7 @@ categories: [XP, Pair Programming, Feedback, Respect, Simplicity]
 
 My name is Matt Scilipoti and If I'm not pairing, I'm distracted.  Hands down, that's my number one reason.  There are plenty of good reasons to practice pair programming.  I feel that the focus that it provides me, and my teammates, is the most important. I choose this benefit because, at the end of each day, this benefit is the one that makes me feel the best about myself. Following closely on the heals of focus is laughter. Pairing provides ample opportunity for laughter.
 
- I am amazing. I have flaws. I embrace them both. My strengths are weaknesses and visa-versa. My ADD comes part and parcel with a hyper-focus state that many of my non-ADD friends are jealous of. 
+ I am amazing. I have flaws. I embrace them both. My strengths are weaknesses and vise versa. My ADD comes part and parcel with a hyper-focus state that many of my non-ADD friends are jealous of. 
 
 > I am a perfectly imperfect human.      
 > I suspect that you are too.   	

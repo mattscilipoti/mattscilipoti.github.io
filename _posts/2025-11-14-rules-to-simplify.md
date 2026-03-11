@@ -15,7 +15,7 @@ I collected a few thoughts about each of the “[6 rules to Simplify](https://po
 4. **Extend the shadow of the future**    
    We need to feel the consequences of our actions.  We need to see how the code we write affects others, including developers who were not privy to our conversations.  Do your current practices support that?  Developers need to see how their changes affect load tests.  We need to get out from behind our desks.  We need to meet customers.  To work with customer support.  To sit with the other teams, within our company, as they use our tools.  Some may balk and we may give in to their cries, but we do it knowing that, in the end, it decreases our team's effectiveness. (see: [Communication, Feedback and Respect](http://www.extremeprogramming.org/values.html)).
 5. **Increase reciprocity**    
-   > We don’t fear anything because no one ever works alone.”
+   > "We don’t fear anything because no one ever works alone.”
    
    Remove dysfunctional self-sufficiency. (see: [Communication and Courage](http://www.extremeprogramming.org/values.html)).
 6. **Reward those who cooperate.  Penalize those who do not.**    
