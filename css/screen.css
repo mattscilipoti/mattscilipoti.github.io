@@ -16,11 +16,10 @@ html, body {
 }
 
 body {
-  background-color: white;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   margin-left: 2em;
-/*  text-align: center; */
+  /* text-align: center; */
 }
 
 
@@ -38,17 +37,6 @@ p {
   margin: 1em 0;
 }
 
-a {
-  color: #00a;
-}
-
-a:hover {
-  color: black;
-}
-
-a:visited {
-  color: #a0a;
-}
 
 table {
   font-size: inherit;
@@ -71,7 +59,6 @@ ul.posts {
   }
 
   ul.posts span {
-    color: #aaa;
     font-family: Monaco, "Courier New", monospace;
     font-size: 80%;
   }
@@ -94,40 +81,24 @@ ul.posts {
 }
 
 .title {  
-  color: #a00;
   font-weight: bold;
   margin-bottom: 2em;
 }
 
   .site .title a {
-    color: #a00;
     text-decoration: none;
-  }
-
-  .site .title a:hover {
-    color: black;
   }
 
   .site .title a.extra {
-    color: #aaa;
     text-decoration: none;
     margin-left: 1em;
-  }
-
-  .site .title a.extra:hover {
-    color: black;
-  }
-
-  .site .meta {
-    color: #aaa;
   }
 
   .site .footer {
 	  width: 40em;
 	  text-align: center;
     font-size: 80%;
-    color: #666;
-    border-top: 4px solid #eee;
+    border-top: 4px solid #555; /* Darker border for footer */
     margin-top: 2em;
     overflow: hidden;
   }
@@ -152,14 +123,22 @@ ul.posts {
       }
 
  section#by_category {
+  border: 1px solid #555; /* Darker border for category section */
 	float: right;
-	top: 100px;
+  margin: 8px;
+  padding: 8px;
+	/* top: 100px; */
  }
 
 #repos_frame {
 	width: 100%;
 	height: 600px;
 	border: none;
+}
+
+#theme-toggle {
+  float: right;
+  margin-right: 8pt;
 }
 
 /*****************************************************************************/
@@ -175,8 +154,8 @@ ul.posts {
   /* standard */
 
   #post pre {
-    border: 1px solid #ddd;
-    background-color: #eef;
+    border: 1px solid #555; /* Darker border for preformatted text */
+    background-color: #444; /* Dark gray background for preformatted text */
     padding: 0 .4em;
   }
 
@@ -186,8 +165,8 @@ ul.posts {
   }
 
   #post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
+    border: 1px solid #555; /* Darker border for inline code */
+    background-color: #444; /* Dark gray background for inline code */
     font-size: 95%;
     padding: 0 .2em;
   }

@@ -1,0 +1,61 @@
+/* Light Theme: Default/Day */
+body.light-mode {
+  background-color: #FFFFFF; /* White background */
+  color: #212121; /* Dark gray text */
+}
+
+body.light-mode a {
+  color: #3F51B5; /* Indigo 500 links */
+
+  &:hover {
+    color: #026376; /* Darker Indigo hover */
+  }
+
+  &:visited {
+    color: #1A237E; /* Deep Indigo visited links */
+
+    &:hover {
+      color: #026376; /* Darker Indigo hover for visited links */
+    }
+  }
+}
+
+body.light-mode .site .meta {
+  color: #757575; /* Medium gray for metadata */
+}
+
+body.light-mode .site .footer {
+  color: #9E9E9E; /* Light gray for footer text */
+  border-top: 4px solid #E0E0E0; /* Light gray border */
+}
+
+/* Dark Theme: Night/Ambient */
+body.dark-mode {
+  background-color: #121212; /* Deep grey background */
+  color: #E0E0E0; /* Light gray text */
+}
+
+body.dark-mode a {
+  color: #90CAF9; /* Blue 200 links */
+
+  &:hover {
+    color: #64B5F6; /* Slightly darker blue hover */
+  }
+
+  &:visited {
+    color: #42A5F5; /* Even darker blue visited links */
+
+    &:hover {
+      color: #64B5F6; /* Slightly darker blue hover for visited links */
+    }
+  }
+}
+
+body.dark-mode .site .meta {
+  color: #B0BEC5; /* Light gray for metadata */
+}
+
+body.dark-mode .site .footer {
+  color: #90A4AE; /* Gray for footer text */
+  border-top: 4px solid #37474F; /* Dark gray border */
+}

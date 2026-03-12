@@ -20,6 +20,9 @@
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
    
+   <!-- Link to theme-specific styles -->
+   <link rel="stylesheet" href="/css/theme.css" type="text/css">
+
   <script src="http://www.google.com/jsapi"></script>
   <script type="text/javascript">
     // from henrik.github.com
@@ -64,7 +67,6 @@
     });
     
   </script>
-  
 </head>
 <body>
 
@@ -74,6 +76,9 @@
     <a class="extra" href="/">home</a>
     <a class="extra" href="/my-philosophy/index.html">My Philosophy</a>
     <a class="extra" href="/who-am-i/index.html">Who Am I</a>
+      <!-- Add theme toggle button -->
+    <button id="theme-toggle">Toggle Theme</button>
+
   </div>
 
   <section id="by_category" class="grid_2">
@@ -127,7 +132,8 @@
   })();
 
 </script>
-
+  <!-- Include theme toggle script -->
+  <script src="/js/theme-toggle.js"></script>
 </body>
 </html>
 
