@@ -12,9 +12,9 @@ I code.
 
 I am not _just_ a coder.    
 I am not a (ninja|rockstar|10xer).    
-I am a solid Developer, a [Software Craftsman](http://manifesto.softwarecraftsmanship.org/).    
+I am a solid Developer, a [Software Craftsman](https://manifesto.softwarecraftsmanship.org/).    
 I strive to explain the intent of my code, to developers that follow.     
-I am comfortable with, and encourage, [DevOps](http://12factor.net/).
+I am comfortable with, and encourage, [DevOps](https://12factor.net/).
 
 I love this stuff.
 
@@ -60,6 +60,6 @@ I hope they return that kindness.
 
 ## Learn more here…
 
-- [My Philosophy](http://blog.clearto.me/my-philosophy)
-- [LinkedIn Profile](https://www.linkedin.com/in/mattscilipoti)
-- [My GitHub "resume"](https://resume.github.io/?mattscilipoti)
+- [My Philosophy](/my-philosophy/index.html)
+- [LinkedIn Profile](https://www.linkedin.com/in/mattscilipoti){:target="_blank" rel="noopener noreferrer"}
+- [My GitHub "resume"](https://resume.github.io/?mattscilipoti){:target="_blank" rel="noopener noreferrer"}

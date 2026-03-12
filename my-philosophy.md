@@ -28,8 +28,8 @@ permalink: /my-philosophy/
 
 ## We are human, capable of amazing things, yet imperfect.
 - Our processes enhance our strengths and shore up our weaknesses.
-- Cooperation: [It’s why we’ve survived.](http://blog.clearto.me/post/cooperation-its-why-weve-survived)
-- Keep it [simple](http://blog.clearto.me/post/the-smart-simplicity-approach).
+- Cooperation: [It’s why we’ve survived.](/2014/02/04/cooperation-its-why-weve-survived.html)
+- Keep it [simple](/2014/01/24/smart-simplicity-approach.html).
 
 ## Growth requires struggle.
 - We help each other fight for what we want.
@@ -37,4 +37,4 @@ permalink: /my-philosophy/
 ## Use absolutes and extremes sparingly.
 - e.g. Maximizing profits (alone) requires tradeoffs you may not be interested in making.
 
-Updated: 06/20/2016
+Updated: 2026/03/12
