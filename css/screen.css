@@ -16,12 +16,15 @@ html, body {
 }
 
 body {
-  font: 13.34px helvetica, arial, clean, sans-serif;
-  *font-size: small;
+  font-family: helvetica, arial, clean, sans-serif;
+  font-size: large;
   margin-left: 2em;
   /* text-align: center; */
 }
 
+button {
+  font-weight: bold;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
@@ -60,7 +63,7 @@ ul.posts {
 
   ul.posts span {
     font-family: Monaco, "Courier New", monospace;
-    font-size: 80%;
+    font-size: 90%;
   }
 
   dl#repos dd {
@@ -76,7 +79,7 @@ ul.posts {
   font-size: 110%;
   text-align: justify;
   /* width: 40em; */
-  margin: 3em auto 2em auto;
+  margin: 0.5em auto 2em auto;
   line-height: 1.5em;
 }
 
@@ -137,8 +140,13 @@ ul.posts {
 }
 
 #theme-toggle {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   float: right;
   margin-right: 8pt;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
 }
 
 /*****************************************************************************/

@@ -29,6 +29,16 @@ body.light-mode .site .footer {
   border-top: 4px solid #E0E0E0; /* Light gray border */
 }
 
+/* Light Theme: Theme Toggle Button */
+body.light-mode #theme-toggle {
+  background-color: #3F51B5; /* Indigo background */
+  color: #FFFFFF; /* White text */
+}
+
+body.light-mode #theme-toggle:hover {
+  background-color: #303F9F; /* Darker Indigo on hover */
+}
+
 /* Dark Theme: Night/Ambient */
 body.dark-mode {
   background-color: #121212; /* Deep grey background */
@@ -58,4 +68,14 @@ body.dark-mode .site .meta {
 body.dark-mode .site .footer {
   color: #90A4AE; /* Gray for footer text */
   border-top: 4px solid #37474F; /* Dark gray border */
+}
+
+/* Dark Theme: Theme Toggle Button */
+body.dark-mode #theme-toggle {
+  background-color: #90CAF9; /* Light Blue background */
+  color: #121212; /* Dark text */
+}
+
+body.dark-mode #theme-toggle:hover {
+  background-color: #64B5F6; /* Slightly darker blue on hover */
 }
