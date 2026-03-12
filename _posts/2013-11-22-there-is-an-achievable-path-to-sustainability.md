@@ -14,7 +14,7 @@ I just watched Janine Benyus share nature's designs in [Biomimicry's surprising 
 
 Wow. It's beautiful. Literally.
 
-![Spider's spinneret](https://cdn-images.postach.io/ce1595f0d046e405615526734d52a3f9/374c7b3a63f4b9d8d43e58a33e398c47/w600_415bc94ed15963af55e2528061140e8f.jpg)
+![Spider's spinneret](/images/spider-spinneret.jpg)
 
 Believe it or not, that's a spider's spinneret.
 
