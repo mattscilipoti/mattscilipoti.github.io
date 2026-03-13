@@ -1,130 +1,85 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <meta name="verify-v1" content="e+easLfwnIZ88FY97u1VGgJKvc+p3lXqknL/YNQgDpU=" />
-   <meta name="google-site-verification" content="azRTUqgmDhUXbspUrLJgLUXeLFWczaCQixadxPfXKLY" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Matt Scilipoti" />
-   <link rel="icon" 
-         type="image/png" 
-         href="/favicon.png"/>
-   <link rel="copyright" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" type="text/html;charset=utf-8"/>
-   <link href="https://feeds.feedburner.com/mattscilipoti" rel="alternate" title="Matt Scilipoti" type="application/atom+xml" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="verify-v1" content="e+easLfwnIZ88FY97u1VGgJKvc+p3lXqknL/YNQgDpU=" />
+  <meta name="google-site-verification" content="azRTUqgmDhUXbspUrLJgLUXeLFWczaCQixadxPfXKLY" />
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Matt Scilipoti" />
+  <link rel="icon" 
+        type="image/png" 
+        href="/favicon.png"/>
+  <link rel="copyright" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" type="text/html;charset=utf-8"/>
+  <link href="https://feeds.feedburner.com/mattscilipoti" rel="alternate" title="Matt Scilipoti" type="application/atom+xml" />
 
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
 
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  <!-- Homepage CSS -->
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
    
-   <!-- Link to theme-specific styles -->
-   <link rel="stylesheet" href="/css/theme.css" type="text/css">
-
-  <script src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-    // from henrik.github.com
-    google.load("jquery", "1");
-    google.load("jqueryui", "1");
-  </script>
-  
-  <script type="text/javascript">
-    google.setOnLoadCallback(function() {
-      
-       getRepos('mattscilipoti', function(repos) {
-        if (!repos.length) return;
-
-        $('#repos').replaceWith('<dl id="repos"></dl>');
-        repos.each(function() {
-          var escapedDesc = $('<div/>').text(this.description).html();
-          $('#repos').append(
-            '<dt><a href="'+this.url+'">'+this.name+'</a> ('+this.watchers+')</dt>'+
-            '<dd>'+escapedDesc+'</dd>'
-          );
-        });
-      });
-
-      function sortByName(a,b)
-      {
-    		if(a.name == b.name){
-    			return 0;
-    		}
-
-    		return (a.name < b.name) ? -1 : 1;
-    	}
-
-      function getRepos(username, callback) {
-        $.getJSON('https://github.com/api/v1/json/'+username+'?callback=?', function(data) {
-          var repos = data.user.repositories;
-          repos = $.grep(repos, function(r) { return !r.fork });
-          repos.sort(function(a, b) { return b.watchers - a.watchers });
-          repos = $(repos);
-          callback(repos.sort(sortByName));
-        });
-      }
-    });
-    
-  </script>
+  <!-- Link to theme-specific styles -->
+  <link rel="stylesheet" href="/css/theme.css" type="text/css">  
 </head>
 <body>
-  <h1 style="text-align: center;">It's Clear to Me (Ramblings of Matt Scilipoti)</h1>
+  <h1>It's Clear to Me (Ramblings of Matt Scilipoti)</h1>
 
-<div class="site">
-  <div class="title">
-    <a href="/">Posts</a>
-    <a class="extra" href="/my-philosophy/index.html">My Philosophy</a>
-    <a class="extra" href="/who-am-i/index.html">Who Am I</a>
-      <!-- Add theme toggle button -->
-    <button id="theme-toggle">Toggle Theme</button>
+  <div class="site">
+    <div class="title">
+      <a href="/">Posts</a>
+      <a class="extra" href="/my-philosophy/index.html">My Philosophy</a>
+      <a class="extra" href="/who-am-i/index.html">Who Am I</a>
+        <!-- Add theme toggle button -->
+      <button id="theme-toggle">Toggle Theme</button>
 
-  </div>
-  
-  {{ content }}
-  
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Matt Scilipoti<br />
-        matts@scilipoti.name
-        <br/>
-        <a href="https://github.com/mattscilipoti/">github.com/mattscilipoti</a><br />
-      </p>
     </div>
-    <div class="rss">
-      <!-- <a href="https://feeds.feedburner.com/mattscilipoti"> -->
-      <a href="/atom.xml">
-        <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
+    
+    {{ content }}
+    
+    
+    <div class="footer">
+      <div class="contact">
+        <p>
+          Matt Scilipoti<br />
+          matts@scilipoti.name
+          <br/>
+          <a href="https://github.com/mattscilipoti/">github.com/mattscilipoti</a><br />
+        </p>
+      </div>
+      <div class="rss">
+        <!-- <a href="https://feeds.feedburner.com/mattscilipoti"> -->
+        <a href="/atom.xml">
+          <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<script  type="text/javascript">
-//<![CDATA[
-  $(document).ready(function() {
-    $('p.update').effect("highlight", {}, 3000);
-  });
-//]]>
-</script>
+  <script  type="text/javascript">
+  //<![CDATA[
+    document.addEventListener('DOMContentLoaded', function() {
+      highlightElements('p.update', 'yellow', 3000);
+    });
+  //]]>
+  </script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-18771872-1']);
-  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18771872-1']);
+    _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
-</script>
-  <!-- Include theme toggle script -->
-  <script src="/js/theme-toggle.js"></script>
+  </script>
+  <!-- Include util scripts -->
+  <script src="/js/utils.js"></script>
 </body>
 </html>
 
