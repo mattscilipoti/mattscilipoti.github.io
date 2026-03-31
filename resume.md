@@ -28,7 +28,7 @@ Software Engineer with 10+ years experience in full-life cycle development, for 
 ### Senior Software Engineer — Space Telescope Science Institute (STScI)
 **2016-07 - 2025-11**
 
-Senior Software Engineer on multiple apps, for Office of Public Outreach. Rails developer and DevSecOps, supporting almost 20 apps.
+Web developer (Rails, PHP) and DevSecOps (GitLab, Docker) supporting over 20 apps, for Office of Public Outreach.
 
 - Focused on ViewSpace project — replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
 - Utilized Github Copilot AI as secondary programmer (before Agents were generally available).
