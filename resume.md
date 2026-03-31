@@ -19,16 +19,16 @@ Software Engineer with 10+ years experience in full-life cycle development, for 
 
 ## Core Skills
 
-- Ruby, Ruby on Rails, REST, DevSecOps, JavaScript, Docker, PostgreSQL, Architecture, Accessibility, CSS, HTML, Training, Public Speaking, Legacy migration, .NET
+- Ruby, Ruby on Rails, REST, DevSecOps, JavaScript, Docker, PostgreSQL, Architecture, Accessibility, CSS, HTML, Training, Public Speaking, Legacy migration, .NET, MS SQL
 
 ---
 
 ## Work Experience
 
-### Senior Software Engineer — Space Telescope Science Institute (STScI)  
+### Senior Software Engineer — Space Telescope Science Institute (STScI)
 **2016-07 - 2025-11**
 
-Senior Software Engineer and DevSecOps on multiple apps. Rails developer, supporting almost 20 apps. Migrated to also cover DevSecOps due to need.
+Senior Software Engineer on multiple apps, for Office of Public Outreach. Rails developer and DevSecOps, supporting almost 20 apps.
 
 - Focused on ViewSpace project — replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
 - Utilized Github Copilot AI as secondary programmer (before Agents were generally available).
