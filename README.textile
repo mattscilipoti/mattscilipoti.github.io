@@ -4,6 +4,20 @@ It is automatically transformed by "Jekyll":https://github.com/mojombo/jekyll in
 
 This site is copied from Tom Preston-Werner.  Like Tom, I was tired of having my blog posts end up in a database off on some remote server. "That is backwards. I've lost valuable posts that way. I want to author my posts locally in Textile or Markdown. My blog should be easily stylable and customizable any way I please. It should take care of creating a feed for me. And most of all, my site should be stored on GitHub so that I never lose data again."
 
+h1. Build and Test Locally
+
+Install dependencies:
+
+bc. bundle install
+
+Serve locally (with auto-regeneration) and preview at http://127.0.0.1:4000:
+
+bc. bundle exec jekyll serve
+
+Build the static site into @_site/@ without starting a server:
+
+bc. bundle exec jekyll build
+
 h1. License
 
 The following directories and their contents are Copyright Matt Scilipoti. You may not reuse anything therein without my permission:
