@@ -1,0 +1,24 @@
+/* Print-specific styles */
+@media print {
+  /* Hide elements with class "title" and "footer" */
+  .title, .footer {
+    display: none;
+  }
+
+  /* Force light theme for printing */
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  /* Optional: Adjust font size for printing */
+  body {
+    font-size: 12pt; /* 12pt font fits on 3 pages */
+  }
+
+  /* Remove underline and styling from links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
