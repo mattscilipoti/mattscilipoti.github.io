@@ -18,8 +18,7 @@ html, body {
 body {
   font-family: helvetica, arial, clean, sans-serif;
   font-size: large;
-  margin-left: 2em;
-  /* text-align: center; */
+  margin: auto 2em;
 }
 
 button {
