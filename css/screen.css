@@ -203,6 +203,27 @@ ul.posts {
     margin-bottom: 1em;
   }
 
+/* Resume download buttons */
+.resume-downloads {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}
+
 /******************* Misc ***********
 
 ************************************/

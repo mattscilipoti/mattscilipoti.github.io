@@ -114,3 +114,12 @@ Owner and independent consultant providing custom software and training. Work in
 Supported industries including insurance, telecommunications, and retail. Visual Basic desktop development (client server and n-tier). Supported DBAs for MS SQL and MS Access. Migrated a large telecommunications firm from 16-bit to 32-bit applications.
 
 ### Naval Nuclear Reactor Operator - United States Navy
+
+---
+
+## Download Resume
+
+<div class="resume-downloads">
+  <a href="/downloads/resume-ats.pdf" class="btn btn-download" download>Download PDF</a>
+  <a href="/downloads/resume-ats.txt" class="btn btn-download" download>Download Text</a>
+</div>

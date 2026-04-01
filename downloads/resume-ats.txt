@@ -1,0 +1,82 @@
+Matthew M. Scilipoti - Agile Software Developer
+Email: matt@scilipoti.name | Phone: (443) 538-8656 | Github: mattscilipoti | Blog: https://blog.clearto.me 
+
+Summary:
+  Software Engineer with 10+ years experience in full-life cycle development, for web and desktop. Passionate about mentoring developers and delivering scalable, accessible solutions in Agile environments. Experienced with Ruby on Rails, web application architecture, DevSecOps, and developer training. Navy Veteran.
+
+Core Skills:
+  Ruby, Ruby on Rails, REST, DevSecOps, JavaScript, Docker, PostgreSQL, Architecture, Accessibility, CSS, HTML, Legacy migration, .NET
+
+Work Experience:
+
+Senior Software Engineer — Space Telescope Science Institute (STScI)
+2016-07 - 2025-11
+Senior Software Engineer and DevSecOps on multiple apps 
+Rails developer, supporting almost 20 apps. Migrated to also cover DevSecOps due to need. 
+  - Focused on ViewSpace project — replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
+  - Utilized Github Copilot AI as secondary programmer (before Agents were generally available)
+  - Reduced deployment from multi-month rollout periods to immediate web deploys.
+  - Reduced bandwidth cost to near zero with massive increase in reliability, by converting real-time streaming to all venues to local video playlist playback agent with IndexedDB-based video caching.
+  - Increased production reliability and repeatability, by migrating deployments from Capistrano to GitLab CI/CD, containerized services with Docker, and introduced VS Code devcontainers to make builds reproducible and speed developer onboarding.
+  - Implemented programmatic Vimeo tooling (uploads, metadata, environment scoping).
+  - Added monitoring, watchdogs, and recovery logic in playback clients to detect and recover from stalled playlists; rolled out synthetic checks to alert operations and reduce mean time to detect issues.
+
+Senior Instructor and Instructional Coach — General Assembly
+2014-09 - 2016-07
+Co-instructor and coach for the Web Development Immersive (WDI) course. Delivered curriculum, mentored instructors, and prepared students for developer roles.
+  - Co-delivered an intensive full-stack curriculum covering HTML/CSS, JavaScript, Ruby on Rails, Angular, and Express.
+  - Onboarded and coached instructor teams, providing lesson reviews, feedback, and teaching best practices to improve student outcomes.
+  - Mentored students through capstone projects and supported career readiness activities that helped graduates land developer positions.
+
+Senior Developer — LearnZillion
+2012-08 - 2014-09
+Senior developer on a multi-tenant Ruby on Rails platform for teacher professional development.
+  - Built multi-tenant features using PostgreSQL and ElasticSearch to power full-text search and content personalization.
+  - Implemented background processing with Resque and improved reliability of asynchronous workflows.
+  - Automated server provisioning using Chef and drove the team's adoption of Continuous Delivery practices.
+  - Evaluated and piloted containerization (Docker) as a path toward reproducible deployments.
+
+Senior Agile Developer (contract) — Federal Reserve Board of Governors
+2012-01 - 2012-08
+Contract work for the Board's eDiscovery and Legal units to improve FOIA processing and eDiscovery workflows.
+  - Extracted and indexed millions of emails across Lotus Notes stores to enable high-speed search and review.
+  - Implemented search-driven pipelines (Sphinx-based) and prediction models to reduce manual review and redaction time.
+  - Improved processing reliability for encrypted attachments and heterogeneous data sources, reducing time-to-deliver for FOIA requests.
+
+Senior Agile Developer — Groupsite.com
+2011-01 - 2012-01
+Worked on legacy and migrated Rails applications and supported hosting and operations.
+Senior Agile Developer — SmartLogic Solutions
+2010-06 - 2011-01
+Led a 4-person web application project and improved QA and architecture decisions.
+  - Led a cross-functional team to deliver a Rails-based web application from inception to production.
+  - Established acceptance testing with Cucumber, improving regression coverage and release confidence.
+  - Shaped UX and architectural trade-offs to improve performance and maintainability.
+
+Senior Agile Developer — Traffipax, Inc.
+2008-12 - 2010-03
+Main Rails developer for traffic management and safety applications.
+  - Replaced a legacy Java system with a Rails-based solution, reducing turnaround from multiple weeks to 1 day for critical workflows.
+  - Automated server provisioning and deployment to speed releases and reduce errors.
+  - Implemented monitoring and log-based alerts to support field technicians and improve system reliability.
+
+Senior Agile Developer — Medical Decision Logic (MDLogix)
+2008-05 - 2008-12
+Worked on clinical trial and patient management applications, modernizing legacy Rails apps and mentoring teams on Rails best practices.
+  - Modernized legacy Rails applications, improving maintainability and performance for clinical-trial workflows.
+  - Mentored engineering teams on Rails conventions, TDD, and agile practices to increase development velocity and code quality.
+  - Tackled technical debt and simplified deployment procedures to shorten release cycles.
+
+Senior Developer — Mind Over Machines, Inc.
+2000-06 - 2000-11
+Clients ranged from legal service providers to small manufacturing concerns. Visual Basic desktop development: client server and n-tier architecture. Provided DBA support for MS SQL and MS Access. One project involved replication of databases across the Internet....
+
+Agile Software Craftsman — Possiamo Consulting LLC
+2000 - 2016-07
+Owner and independent consultant providing custom software and training. Work includes e-learning, bioinformatics, knowledge management, rules-based engines, insurance processing, inspection validation, and distributed document management and workflow. We create web applications (Rails & ASP....
+
+Senior Developer/Analyst — Ajilon
+1994-07 - 2000-06
+Supported industries including insurance, telecommunications, and retail. Visual Basic desktop development (client server and n-tier). Supported DBAs for MS SQL and MS Access. Migrated a large telecommunications firm from 16-bit to 32-bit applications....
+
+Naval Nuclear Reactor Operator - United States Navy
