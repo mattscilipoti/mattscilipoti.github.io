@@ -117,9 +117,11 @@ Supported industries including insurance, telecommunications, and retail. Visual
 
 ---
 
-## Download Resume
 
-<div class="resume-downloads">
-  <a href="/downloads/resume-ats.pdf" class="btn btn-download" download>Download PDF</a>
-  <a href="/downloads/resume-ats.txt" class="btn btn-download" download>Download Text</a>
-</div>
+<footer class="resume-footer">
+  <h2>Download Resume</h2>
+  <div class="resume-downloads">
+    <a href="/downloads/resume.pdf" class="btn btn-download" download>Download PDF</a>
+    <a href="/downloads/resume.txt" class="btn btn-download" download>Download Text</a>
+  </div>
+</footer>

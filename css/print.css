@@ -1,7 +1,7 @@
 /* Print-specific styles */
 @media print {
   /* Hide elements with class "title" and "footer" */
-  .title, .footer {
+  .title, .footer, footer {
     display: none;
   }
 
