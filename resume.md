@@ -30,7 +30,7 @@ Software Engineer with 10+ years experience in full-life cycle development, for 
 
 Web developer (Rails, PHP) and DevSecOps (GitLab, Docker) supporting over 20 apps, for Office of Public Outreach.
 
-- Focused on ViewSpace project — replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
+- Focused on viewspace.org project — replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
 - Utilized Github Copilot AI as secondary programmer (before Agents were generally available).
 - Reduced deployment from multi-month rollout periods to immediate web deploys.
 - Reduced bandwidth cost to near zero with massive increase in reliability, by converting real-time streaming to all venues to local video playlist playback agent with IndexedDB-based video caching.
@@ -121,7 +121,7 @@ Supported industries including insurance, telecommunications, and retail. Visual
 <footer class="resume-footer">
   <h2>Download Resume</h2>
   <div class="resume-downloads">
-    <a href="/downloads/resume.pdf" class="btn btn-download" download>Download PDF</a>
-    <a href="/downloads/resume.txt" class="btn btn-download" download>Download Text</a>
+    <a href="/downloads/matthew_scilipoti_resume.pdf" class="btn btn-download" download>Download PDF</a>
+    <a href="/downloads/matthew_scilipoti_resume.txt" class="btn btn-download" download>Download Text</a>
   </div>
 </footer>

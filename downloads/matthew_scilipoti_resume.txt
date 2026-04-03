@@ -13,7 +13,7 @@ Senior Software Engineer — Space Telescope Science Institute (STScI)
 2016-07 - 2025-11
 Senior Software Engineer and DevSecOps on multiple apps 
 Rails developer, supporting almost 20 apps. Migrated to also cover DevSecOps due to need. 
-  - Focused on ViewSpace project — replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
+  - Focused on viewspace.org project: replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
   - Utilized Github Copilot AI as secondary programmer (before Agents were generally available)
   - Reduced deployment from multi-month rollout periods to immediate web deploys.
   - Reduced bandwidth cost to near zero with massive increase in reliability, by converting real-time streaming to all venues to local video playlist playback agent with IndexedDB-based video caching.

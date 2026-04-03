@@ -4,3 +4,5 @@ plugins:
 pygments: true
 rdiscount:
   extensions: [smart]
+exclude:
+  - vendor
