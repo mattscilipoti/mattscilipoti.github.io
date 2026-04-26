@@ -2,7 +2,7 @@ Matthew M. Scilipoti - Agile Software Developer
 Email: matt@scilipoti.name | Phone: (443) 538-8656 | Github: mattscilipoti | Blog: https://blog.clearto.me 
 
 Summary:
-  Software Engineer with 10+ years experience in full-life cycle development, for web and desktop. Passionate about mentoring developers and delivering scalable, accessible solutions in Agile environments. Experienced with Ruby on Rails, web & desktop application architecture, DevSecOps, and developer training. Navy Veteran.
+  Software Engineer with 20+ years experience in full-life cycle development, for web and desktop. Passionate about mentoring developers and delivering scalable, accessible solutions in Agile environments. Experienced with Ruby on Rails, web & desktop application architecture, DevSecOps, and developer training. Navy Veteran.
 
 Core Skills:
   Ruby, Ruby on Rails, REST, DevSecOps, JavaScript, Docker, PostgreSQL, Architecture, Accessibility, CSS, HTML, Legacy migration, .NET
