@@ -1,6 +1,6 @@
 Dear Mechanical Orchard Team,
 
-I'm applying for the Infrastructure Software Engineer role at Mechanical Orchard. In the past, I've worked with teams that partnered with Pivotal Labs (pre-AWS), and those experiences left a strong impression. I appreciated the disciplined, human-centered practices, the clarity of communication, and the practical craftsmanship in the codebases.
+I'm applying for any Software Engineer related role at Mechanical Orchard. In the past, I've worked with teams that partnered with Pivotal Labs (pre-AWS), and those experiences left a strong impression. I appreciated the disciplined, human-centered practices, the clarity of communication, and the practical craftsmanship in the codebases.
 
 I want to be candid, I'm interested in your team's approach to legacy modernization and the Imogen platform, but your engineering practices make Mechanical Orchard my top choice. Think of this as akin to an "early admission application". I miss pair programming. I want to work at Mechanical Orchard, in any role related to Software Engineering. I hope to bring my experience in infrastructure, CI/CD, and reliability engineering to help your team deliver modern, behavior-driven systems.
 
