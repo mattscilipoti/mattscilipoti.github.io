@@ -9,6 +9,13 @@ Core Skills:
 
 Work Experience:
 
+STEM Instructor — iCode Severna Park
+2026-06 - Present
+Classroom instruction for grade school students over various coding focused STEM subjects: general coding, drones, games (ROBLOX, CONSTRUCT 3)
+  - Update curriculum to create learning arc and exercises, focusing on a mix of education and enjoyment
+  - Teaching a series of week-long summer camps, covering multiple STEM subjects
+  - Collaborating with co-instructor to instruct and improve curriculum
+
 Senior Software Engineer — Space Telescope Science Institute (STScI)
 2016-07 - 2025-11
 Senior Software Engineer and DevSecOps on multiple apps 
