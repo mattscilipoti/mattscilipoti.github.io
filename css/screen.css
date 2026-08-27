@@ -11,18 +11,28 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   font-family: helvetica, arial, clean, sans-serif;
   font-size: large;
   margin: auto 2em;
 }
 
-button {
+button,
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
   font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* a.btn-specific styling for link elements */
+a.btn {
+  margin: 0 10px;
+  font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,16 +40,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
 }
 
-
 h1 {
   margin-bottom: 1em;
   text-align: center;
 }
 
+html, body {
+  height: 100%;
+}
+
 p {
   margin: 1em 0;
 }
-
 
 table {
   font-size: inherit;
@@ -140,13 +152,8 @@ ul.posts {
 }
 
 #theme-toggle {
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
   float: right;
   margin-right: 8pt;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease;
 }
 
 /*****************************************************************************/
@@ -203,25 +210,9 @@ ul.posts {
     margin-bottom: 1em;
   }
 
-/* Resume download buttons */
 .resume-downloads {
   margin-top: 2em;
   text-align: center;
-}
-
-.btn-download {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #007BFF;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 14px;
-  margin: 0 10px;
-}
-
-.btn-download:hover {
-  background-color: #0056b3;
 }
 
 .post-header {

@@ -15,7 +15,7 @@ body.light-mode a {
     color: #1A237E; /* Deep Indigo visited links */
 
     &:hover {
-      color: #026376; /* Darker Indigo hover for visited links */
+      color: #FFFFFF; /* White text on hover (matches button text) */
     }
   }
 }
@@ -29,14 +29,24 @@ body.light-mode .site .footer {
   border-top: 4px solid #E0E0E0; /* Light gray border */
 }
 
-/* Light Theme: Theme Toggle Button */
-body.light-mode #theme-toggle {
+/* Light Theme: Button Styling */
+body.light-mode button,
+body.light-mode .btn {
   background-color: #3F51B5; /* Indigo background */
   color: #FFFFFF; /* White text */
 }
 
-body.light-mode #theme-toggle:hover {
-  background-color: #303F9F; /* Darker Indigo on hover */
+body.light-mode button:hover,
+body.light-mode .btn:hover {
+  background-color: #1E3A8A; /* Bolder dark indigo on hover */
+}
+
+body.light-mode a.btn:hover {
+  color: #FFFFFF; /* Maintain white text on hover */
+}
+
+body.light-mode a.btn:visited {
+  color: #FFFFFF; /* Maintain white text for visited buttons */
 }
 
 /* Dark Theme: Night/Ambient */
@@ -56,7 +66,7 @@ body.dark-mode a {
     color: #42A5F5; /* Even darker blue visited links */
 
     &:hover {
-      color: #64B5F6; /* Slightly darker blue hover for visited links */
+      color: #121212; /* Dark text on hover (matches button text) */
     }
   }
 }
@@ -70,14 +80,24 @@ body.dark-mode .site .footer {
   border-top: 4px solid #37474F; /* Dark gray border */
 }
 
-/* Dark Theme: Theme Toggle Button */
-body.dark-mode #theme-toggle {
+/* Dark Theme: Button Styling */
+body.dark-mode button,
+body.dark-mode .btn {
   background-color: #90CAF9; /* Light Blue background */
   color: #121212; /* Dark text */
 }
 
-body.dark-mode #theme-toggle:hover {
-  background-color: #64B5F6; /* Slightly darker blue on hover */
+body.dark-mode button:hover,
+body.dark-mode .btn:hover {
+  background-color: #1976D2; /* Bolder blue on hover */
+}
+
+body.dark-mode a.btn:hover {
+  color: #121212; /* Maintain dark text on hover */
+}
+
+body.dark-mode a.btn:visited {
+  color: #121212; /* Maintain dark text for visited buttons */
 }
 
 /* Light Theme: Post Metadata */

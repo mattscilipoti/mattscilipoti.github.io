@@ -122,7 +122,7 @@ Owner and independent consultant providing custom software and training. Work in
 <footer class="resume-footer">
   <h2>Download Resume</h2>
   <div class="resume-downloads">
-    <a href="/downloads/matthew_scilipoti_resume.pdf" class="btn btn-download" download>Download PDF</a>
-    <a href="/downloads/matthew_scilipoti_resume.txt" class="btn btn-download" download>Download Text</a>
+    <a href="/downloads/matthew_scilipoti_resume.pdf" class="btn" download>Download PDF</a>
+    <a href="/downloads/matthew_scilipoti_resume.txt" class="btn" download>Download Text</a>
   </div>
 </footer>

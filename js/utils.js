@@ -23,12 +23,23 @@ function highlightElements(selector, color = 'yellow', duration = 2000) {
 
 // Theme toggle script
 (function() {
+  function updateThemeToggleText() {
+    const toggleButton = document.getElementById('theme-toggle');
+    if (!toggleButton) return;
+    
+    const body = document.body;
+    if (body.classList.contains('dark-mode')) {
+      toggleButton.textContent = 'Use Light Theme';
+    } else {
+      toggleButton.textContent = 'Use Dark Theme';
+    }
+  }
+
   function initThemeToggleButton() {
     const toggleButton = document.getElementById('theme-toggle');
     if (!toggleButton) {
-      // exit function
       return;
-    };initThemeToggleButton
+    }
     
     const body = document.body;
 
@@ -37,6 +48,9 @@ function highlightElements(selector, color = 'yellow', duration = 2000) {
     if (savedTheme) {
       body.classList.add(savedTheme);
     }
+
+    // Set initial button text
+    updateThemeToggleText();
 
     // Toggle theme on button click
     toggleButton.addEventListener('click', () => {
@@ -49,6 +63,7 @@ function highlightElements(selector, color = 'yellow', duration = 2000) {
         body.classList.add('dark-mode');
         localStorage.setItem('theme', 'dark-mode');
       }
+      updateThemeToggleText();
     });
   }
 
