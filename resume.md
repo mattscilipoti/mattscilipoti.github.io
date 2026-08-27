@@ -4,33 +4,40 @@ title: Matthew M. Scilipoti - Agile Software Developer
 permalink: /resume/
 ---
 
-**Email:** matt@scilipoti.name  
-**Phone:** (443) 538-8656  
-**Github:** [mattscilipoti](https://github.com/mattscilipoti)  
-**Blog:** [https://blog.clearto.me](https://blog.clearto.me)
+**Email:** matt@scilipoti.name | **Phone:** (443) 538-8656  
+**Github:** [mattscilipoti](https://github.com/mattscilipoti) | **Blog:** [https://blog.clearto.me](https://blog.clearto.me)
 
 ---
 
 ## Summary
 
-Software Engineer with 10+ years experience in full-life cycle development, for web and desktop. Passionate about mentoring developers and delivering scalable, accessible solutions in Agile environments. Experienced with Ruby on Rails, web and desktop application architecture, DevSecOps, and developer training. Navy Veteran.
+Software Engineer with 20+ years experience in full-life cycle development, for web and desktop. Passionate about mentoring developers and delivering scalable, accessible solutions in Agile environments. Experienced with Ruby on Rails, web & desktop application architecture, DevSecOps, and developer training. Navy Veteran.
 
 ---
 
 ## Core Skills
 
-- Ruby, Ruby on Rails, REST, DevSecOps, JavaScript, Docker, PostgreSQL, Architecture, Accessibility, CSS, HTML, Training, Public Speaking, Legacy migration, .NET, MS SQL
+Ruby, Ruby on Rails, REST, DevSecOps, JavaScript, Docker, PostgreSQL, Teaching, Architecture, Accessibility, CSS, HTML, Public Speaking, Legacy migration, .NET, MS SQL
 
 ---
 
 ## Work Experience
 
-### Senior Software Engineer — Space Telescope Science Institute (STScI)
+### STEM Instructor — iCode Severna Park
+**2026-06 - Present**
+
+Classroom instruction for grade school students over various coding focused STEM subjects: general coding, drones, games (Roblox, Construct3)
+
+- Update curriculum to create learning arc and exercises, focusing on a mix of education and enjoyment
+- Teaching a series of week-long summer camps, covering multiple STEM subjects
+- Collaborating with co-instructor to instruct and improve curriculum
+
+### Senior Software Engineer — Space Telescope Science Institute (STScI)  
 **2016-07 - 2025-11**
 
 Web developer (Rails, PHP) and DevSecOps (GitLab, Docker) supporting over 20 apps, for Office of Public Outreach.
 
-- Focused on viewspace.org project — replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
+- Focused on viewspace.org project, replaced a failing OTS digital-signage and playlist platform for museums and libraries, with focus on accessibility.
 - Utilized Github Copilot AI as secondary programmer (before Agents were generally available).
 - Reduced deployment from multi-month rollout periods to immediate web deploys.
 - Reduced bandwidth cost to near zero with massive increase in reliability, by converting real-time streaming to all venues to local video playlist playback agent with IndexedDB-based video caching.
@@ -70,6 +77,7 @@ Contract work for the Board's eDiscovery and Legal units to improve FOIA process
 **2011-01 - 2012-01**
 
 Worked on legacy and migrated Rails applications and supported hosting and operations.
+- Created 508 Compliance Report Card
 
 ### Senior Agile Developer — SmartLogic Solutions  
 **2010-06 - 2011-01**
@@ -107,13 +115,6 @@ Clients ranged from legal service providers to small manufacturing concerns. Vis
 **2000 - 2016-07**
 
 Owner and independent consultant providing custom software and training. Work includes e-learning, bioinformatics, knowledge management, rules-based engines, insurance processing, inspection validation, and distributed document management and workflow. We create web applications (Rails & ASP).
-
-### Senior Developer/Analyst — Ajilon  
-**1994-07 - 2000-06**
-
-Supported industries including insurance, telecommunications, and retail. Visual Basic desktop development (client server and n-tier). Supported DBAs for MS SQL and MS Access. Migrated a large telecommunications firm from 16-bit to 32-bit applications.
-
-### Naval Nuclear Reactor Operator - United States Navy
 
 ---
 
