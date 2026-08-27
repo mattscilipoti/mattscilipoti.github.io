@@ -1,0 +1,14 @@
+<table class="post-meta">
+  {% if page.date %}
+    <tr>
+      <th>Posted:</th>
+      <td>{{ page.date | date_to_string }}</td>
+    </tr>
+  {% endif %}
+  {% if page.last_modified_at %}
+    <tr>
+      <th>Last updated:</th>
+      <td>{{ page.last_modified_at | date_to_string }}</td>
+    </tr>
+  {% endif %}
+</table>

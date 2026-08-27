@@ -79,3 +79,21 @@ body.dark-mode #theme-toggle {
 body.dark-mode #theme-toggle:hover {
   background-color: #64B5F6; /* Slightly darker blue on hover */
 }
+
+/* Light Theme: Post Metadata */
+body.light-mode .post-meta th {
+  color: #999; /* Medium gray for labels */
+}
+
+body.light-mode .post-meta td {
+  color: #333; /* Dark text for dates */
+}
+
+/* Dark Theme: Post Metadata */
+body.dark-mode .post-meta th {
+  color: #90A4AE; /* Light gray-blue for labels */
+}
+
+body.dark-mode .post-meta td {
+  color: #E0E0E0; /* Light gray for dates */
+}

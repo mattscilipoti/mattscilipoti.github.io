@@ -224,6 +224,40 @@ ul.posts {
   background-color: #0056b3;
 }
 
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-header h1 {
+  margin: 0;
+  flex: 1;
+}
+
+.post-meta-header {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.post-meta {
+  font-size: 0.85em;
+  border-collapse: collapse;
+}
+
+.post-meta th {
+  font-weight: bold;
+  font-size: 0.9em;
+  text-align: right;
+  padding-right: 0.75em;
+}
+
+.post-meta td {
+  font-weight: bold;
+  text-align: left;
+}
+
 /******************* Misc ***********
 
 ************************************/
